@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Shopping Cart Layout</title>
+  <style>
+    .block-heading {
+      text-align: center;
+      color: #3b99e0;
+      margin: 20px 0;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .product img {
+      max-width: 100%;
+    }
+    .summary {
+      padding: 20px;
+      border-bottom: 1px solid #5ea4f3;
+    }
+    .summary button {
+      background-color: #3b99e0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container">
+    <h1 class="block-heading">Shopping Cart</h1>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="product">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid" src="product1.jpg" alt="Product 1">
+            </div>
+            <div class="col-md-8">
+              <h3>Product 1</h3>
+              <p>Description of Product 1.</p>
+              <p>Price: $20</p>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid" src="product2.jpg" alt="Product 2">
+            </div>
+            <div class="col-md-8">
+              <h3>Product 2</h3>
+              <p>Description of Product 2.</p>
+              <p>Price: $25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="summary">
+          <h2>Summary</h2>
+          <p>Total Items: 2</p>
+          <p>Total Price: $45</p>
+          <button class="btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
